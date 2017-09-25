@@ -16,10 +16,10 @@ public class MultiFilesValidator implements Validator{
 	public void validate(Object arg0, Errors error) {
 		MultiFileBucket multiFileBucket = (MultiFileBucket) arg0;
 		int index = 0;
-		for(FileBucket file: multiFileBucket.getFileLists()) {
+		for(FileBucket file: multiFileBucket.getFiles()) {
 			if(file.getFile()!=null) {
 				if(file.getFile().getSize() == 0) {
-					error.rejectValue("file[" + index + "].file", "missing.file");
+					error.rejectValue("files[" + index + "].file", "missing.file");
 				}
 			}
 			index++;

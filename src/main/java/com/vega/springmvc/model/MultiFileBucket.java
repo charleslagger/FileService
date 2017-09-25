@@ -4,20 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MultiFileBucket {
-	List<FileBucket> fileLists = new ArrayList<FileBucket>();
+
+	List<FileBucket> files = new ArrayList<FileBucket>();
 	
-	
-	public MultiFileBucket() {
-		fileLists.add(new FileBucket());
-		fileLists.add(new FileBucket());
-		fileLists.add(new FileBucket());
-		fileLists.add(new FileBucket());
-	}
-	public List<FileBucket> getFileLists() {
-		return fileLists;
+	public MultiFileBucket(){
+		files.add(new FileBucket());
+		files.add(new FileBucket());
+		files.add(new FileBucket());
 	}
 	
-	public void setFiles(List<FileBucket> fileLists) {
-		this.fileLists = fileLists;
+	public List<FileBucket> getFiles() {
+		return files;
+	}
+
+	public void setFiles(List<FileBucket> files) {
+		this.files = files;
 	}
 }
