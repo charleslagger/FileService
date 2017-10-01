@@ -2,20 +2,19 @@ package com.vega.springmvc.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-public class Initializer extends AbstractAnnotationConfigDispatcherServletInitializer{
+public class SpringWebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
-		return new Class[] {RootConfig.class};
-	}
-	
-	@Override
-	protected Class<?>[] getServletConfigClasses() {
-		return new Class[] {ServletConfig.class};
-	}
-	
-	@Override
-	protected String[] getServletMappings() {
-		return new String[] {"/"};
+		return new Class[] { ApplicationContextConfig.class };
 	}
 
+	@Override
+	protected Class<?>[] getServletConfigClasses() {
+		return null;
+	}
+
+	@Override
+	protected String[] getServletMappings() {
+		return new String[] { "/" };
+	}
 }

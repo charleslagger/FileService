@@ -6,13 +6,16 @@ import java.util.List;
 public class MultiFileBucket {
 
 	List<FileBucket> files = new ArrayList<FileBucket>();
-	
-	public MultiFileBucket(){
-		files.add(new FileBucket());
-		files.add(new FileBucket());
-		files.add(new FileBucket());
+
+	public MultiFileBucket() {
 	}
-	
+
+	public MultiFileBucket(int index) {
+		for (int i = 0; i < index; i++) {
+			files.add(new FileBucket());
+		}
+	}
+
 	public List<FileBucket> getFiles() {
 		return files;
 	}

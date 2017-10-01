@@ -21,5 +21,4 @@ public class FileValidator implements Validator{
 	public boolean supports(Class<?> arg0) {
 		return FileBucket.class.isAssignableFrom(arg0);
 	}
-	
 }

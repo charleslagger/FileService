@@ -15,7 +15,7 @@ body, #mainWrapper, .form-control{
 	padding-bottom:10px;
 }
 
-.form-container {
+/*.form-container {
   position:fiexd;
   width:70%;
   margin-left: 20px;
@@ -25,7 +25,7 @@ body, #mainWrapper, .form-control{
   background-color: #E8E1E1;
   border: 1px solid #ddd;
   border-radius: 4px;
-}
+}*/
 
 .floatRight{
 	float:right;
@@ -33,7 +33,7 @@ body, #mainWrapper, .form-control{
 }
 
 .has-error{
-	color:blue;
+	color:red;
 }
 
 .success{
@@ -45,4 +45,99 @@ body, #mainWrapper, .form-control{
   background-color: #E8E1E1;
   border: 1px solid #ddd;
   border-radius: 4px;
+}
+
+.title-color{
+	color:blue;
+
+}
+.title{
+  color: blue;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.label-color{
+	color:#008080;
+}
+
+.text-color{
+	color:#252033;
+}
+
+table{
+  width: 70% !important
+}
+th, td{
+  text-align: center;
+}
+td:nth-child(2){
+  text-align: right;
+}
+th:not(:nth-child(2)){
+  font-size: 15px;
+  border-left: 1px solid #ddd;
+}
+th:last-child{
+  border-right: 1px solid #ddd;
+}
+tr:first-child{
+  background-color: white;
+}
+tr:nth-child(odd):not(:first-child){
+  background-color: #a6ec9e;
+}
+tr:nth-child(even){
+  background-color: #ccebef;
+}
+td:not(:nth-child(2)){
+  border-left: 1px solid #ddd ;
+}
+.choose-file{
+  background-color: #286090;
+  color: white;
+  border-color: #204d74;
+}
+/* .inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.inputfile + label {
+    font-size: 12px;
+    color: white;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 0 #1b3f5f;
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: #2e6da4;
+    box-shadow: none;
+}
+.inputfile + label {
+  cursor: pointer;
+} */
+.form-control{
+	cursor: pointer;
+	border: none;
+	box-shadow: 1px 2px 0 #95c393;
+}
+.form-control:hover{
+	box-shadow: none;
+}
+.btn{
+  box-shadow: 1px 2px 0 #1b3f5f;
+}
+.btn:hover{
+  box-shadow: none;
+}
+.btn-sm{
+  font-size: 18px;
+  font-weight: bold;
 }
