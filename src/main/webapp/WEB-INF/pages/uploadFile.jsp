@@ -37,6 +37,7 @@
 											class="help-inline" />
 									</div>
 								</c:if></td>
+
 							<td class="text-color"><c:if
 									test="${manFile[vs.index] == '1'}">
 									<c:out value="(*)" />
