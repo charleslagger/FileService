@@ -28,10 +28,10 @@
 					</tr>
 					<c:forEach items="${multiFileBucket.files}" var="v" varStatus="vs">
 						<tr>
-							<td class="text-color"><c:out value="${titleFile[vs.index]}" /></td>
+							<td class="text-color"><c:out value="${doctypeField[vs.index]}" /></td>
 							<td><form:input type="file" path="files[${vs.index}].file"
 									id="files[${vs.index}].file" class="form-control input-sm" />
-								<c:if test="${manFile[vs.index] == '1'}">
+								<c:if test="${requiredField[vs.index] == '1'}">
 									<div class="has-error">
 										<form:errors path="files[${vs.index}].file"
 											class="help-inline" />
@@ -39,7 +39,7 @@
 								</c:if></td>
 
 							<td class="text-color"><c:if
-									test="${manFile[vs.index] == '1'}">
+									test="${requiredField[vs.index] == '1'}">
 									<c:out value="(*)" />
 								</c:if></td>
 						</tr>

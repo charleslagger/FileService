@@ -1,10 +1,13 @@
 package com.vega.springmvc.model;
 
-public class LoanDocument {
+import java.io.Serializable;
+
+@SuppressWarnings("serial")
+public class LoanDocument implements Serializable{
 	private Long orderId;
 	private String documentTypeName;
 	private String originalFileId;
-	
+
 	public Long getOrderId() {
 		return orderId;
 	}
@@ -28,6 +31,4 @@ public class LoanDocument {
 	public void setOriginalFileId(String originalFileId) {
 		this.originalFileId = originalFileId;
 	}
-
-	
 }

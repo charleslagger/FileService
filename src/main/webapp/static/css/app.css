@@ -141,3 +141,7 @@ td:not(:nth-child(2)){
   font-size: 18px;
   font-weight: bold;
 }
+
+.tablecontainer{
+	padding-left: 20px;
+}
